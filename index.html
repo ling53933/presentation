@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>LinaPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top"></div>
+    <p class="title">LING&CO.</p>
+    <nav>
+        <ul>
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#five">PROJECTS</a></li>
+          <li><a href="#seven">CONTACT</a></li>
+        </ul>
+      </nav>
+   
+    <section class="home"> 
+        <p id="one">Hello, I am Lina Nguyen</p>
+        <p id="two">Multimedia Design Student</p>
+    </section>
+
+    <div class="grid">
+        <div class="about">
+            <p id="three">About Me</p>
+            <br>
+            <p id="four">I am a first semester Multimedia Design student at  University College of Lillebælt, based in Denmark. I am passionate about bringing creativity into digital practices. </p>
+        </div>
+        <div class="picture1"><img src="images/grid.jpeg" alt="Picture 1"></div>
+        <div class="picture2"><img src="images/grid.jpeg" class="pic2" alt="Picture 2"></div>
+        <div class="text">
+            <p id="three">Multimedia Desinger</p>
+            <br>
+            <p id="four">Multimedia design intergrates multiples types of medias, to include video, photo, animation, sound and text.</p>
+        </div>
+      </div>
+
+
+    <div class="grid-piccontainer">
+        <div class="border-line"></div>
+            <p id="five">Projects</p>
+            <div class="border-line"></div>
+            <p id="six">Here are some of my works that I have created throughout my first semester.</p>
+        <div class="outer-picgrid">
+            <div class="inner-picgrid1">
+                <div class="grid-item item1"><img src="images/grid11.jpeg" alt=""></div>
+                <div class="grid-item item2"><img src="images/grid12.jpeg" alt=""></div>  
+                <div class="grid-item item3"><img src="images/grid13.jpeg" alt=""></div>
+            </div>
+            <div class="inner-picgrid2">
+                <div class="grid-item item11"><img src="images/grid21.jpeg" alt=""></div>
+                <div class="grid-item item12"><img src="images/grid22.JPeG" alt=""></div>
+                <div class="grid-item item13"><img src="images/grid23.jpeg" alt=""></div>
+                <div class="grid-item item14"><img src="images/grid24.jpeg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="undertext"> 
+        <p id="undertext"> <i>PHOTOGRAPHY</i>
+        </p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+    </div>
+
+    <div class="flex-containervideo">
+        <div class="video-container">
+          <video controls autoplay loop>
+            <source src="images/video.mp4"  type="video/mp4">
+          </video>
+        </div>
+    </div>
+
+    <div class="undertext"> 
+        <p id="undertext"> <i>VIDEOGRAPHY</i>
+        </p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+    </div>
+
+    
+
+
+    <div class="grid-containerproj">
+        <div class="column">
+           <img src="images/movingart.gif" alt="movingart gif">
+        </div>
+        <div class="column">
+            <div class="undertext"> 
+                <p id="undertext"> <i>MOVING ART</i>
+                </p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+            </div>
+        </div>
+
+        <div class="column">
+            <div id="imageContainer">
+                <img src="images/Potrait.jpeg" alt="protait animation">
+                <img src="images/protaitorg.jpeg" alt="original picture of picture animation">
+              </div>
+            
+              <script>
+                var images = document.querySelectorAll('#imageContainer img');
+                var currentIndex = 0;
+            
+                setInterval(function() {
+                  images[currentIndex].classList.remove('active');
+                  currentIndex = (currentIndex + 1) % images.length;
+                  images[currentIndex].classList.add('active');
+                }, 1000);
+              </script>
+        </div>
+
+        <div class="column">
+            <div class="undertext"> 
+                <p id="undertext"> <i>MOVING ART</i>
+                </p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+            </div>
+        </div>
+        <div class="column">
+            <div class="sprite"></div>
+        </div>
+        <div class="column">
+            <div class="undertext"> 
+                <p id="undertext"> <i>CSS ANIMATION </i>
+                </p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+            </div>
+        </div>
+        <div class="column">
+            <img src="images/movingart.gif" alt="movingart gif">
+         </div>
+         <div class="column">
+             <div class="undertext"> 
+                 <p id="undertext"> <i>MOVING ART</i>
+                 </p>
+                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+             </div>
+         </div>
+       
+    </div>
+
+
+
+
+
+    <div class="cover-image">
+        <img src="images/contact.jpg" alt="Cover Image">
+        <div class="text-overlay">
+            <div class="border-line"></div>
+            <p id="seven">CONTACT</p>
+            <div class="border-line"></div>
+        </div>
+    </div>
+</body>
+</html>
